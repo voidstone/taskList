@@ -1,6 +1,6 @@
 package com.example.taskList.repository.impl;
 
-import com.example.taskList.domain.user.Task;
+import com.example.taskList.domain.task.Task;
 import com.example.taskList.repository.TaskRepository;
 import org.springframework.stereotype.Repository;
 

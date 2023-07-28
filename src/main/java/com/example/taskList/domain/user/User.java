@@ -1,9 +1,8 @@
 package com.example.taskList.domain.user;
 
+import com.example.taskList.domain.task.Task;
 import lombok.Data;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 

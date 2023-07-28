@@ -1,4 +1,4 @@
-package com.example.taskList.domain.user;
+package com.example.taskList.domain.task;
 
 public enum Status {
     TODO,

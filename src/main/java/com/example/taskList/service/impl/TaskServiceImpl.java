@@ -1,6 +1,6 @@
 package com.example.taskList.service.impl;
 
-import com.example.taskList.domain.user.Task;
+import com.example.taskList.domain.task.Task;
 import com.example.taskList.service.TaskService;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public Task create(Task task) {
+    public Task create(Task task, Long id) {
         return null;
     }
 

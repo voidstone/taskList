@@ -1,5 +1,6 @@
-package com.example.taskList.domain.user;
+package com.example.taskList.domain.task;
 
+import com.example.taskList.domain.task.Status;
 import lombok.Data;
 
 import java.time.LocalDateTime;

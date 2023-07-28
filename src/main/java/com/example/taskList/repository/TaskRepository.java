@@ -1,6 +1,6 @@
 package com.example.taskList.repository;
 
-import com.example.taskList.domain.user.Task;
+import com.example.taskList.domain.task.Task;
 
 import java.util.List;
 import java.util.Optional;

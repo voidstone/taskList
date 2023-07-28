@@ -1,6 +1,6 @@
 package com.example.taskList.service;
 
-import com.example.taskList.domain.user.Task;
+import com.example.taskList.domain.task.Task;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ public interface TaskService {
 
     List<Task> getAllByUserId(Long id);
 
-    Task create(Task task);
+    Task create(Task task, Long id);
 
     Task update(Task task);
 
