@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: tasklist
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: fa#4DG6^G
