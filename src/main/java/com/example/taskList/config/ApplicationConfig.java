@@ -1,6 +1,8 @@
 package com.example.taskList.config;
 
 
+import com.example.taskList.web.security.JwtTokenFilter;
+import com.example.taskList.web.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -21,6 +23,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
+    private final JwtTokenProvider tokenProvider;
+
     private final ApplicationContext applicationContext;
 
     @Bean
@@ -37,13 +41,13 @@ public class ApplicationConfig {
     @Bean
     public SecurityFilterChain filterChain(final HttpSecurity httpSecurity) throws Exception {
         httpSecurity
-//                .csrf().disable()
-//                .cors()
-//                .and()
-//                .httpBasic().disable()
-//                .sessionManagement()
-//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-//                .and()
+                .csrf().disable()
+                .cors()
+                .and()
+                .httpBasic().disable()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
                 .exceptionHandling()
                 .authenticationEntryPoint(
                         (request, response, exception) -> {
